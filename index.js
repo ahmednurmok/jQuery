@@ -49,5 +49,74 @@ $("h1").prepend("<button>one</button>");
 $("h1").append("<button>one</button>");
 //adds an element inside the h1, just before the end of the closing tag (and after the content e.g. "hello world")
 //Remove element
-$("h1").remove();
+// $("h1").remove();
 //removes element
+
+// - $("button").on("click", function() {
+// $("h1").hide();
+// });
+//hide h1
+// - $("h1").show();
+//show h1
+
+$("button").on("click", function() {
+    $("h1").toggle();
+    });
+//toggle h1
+
+
+$("button").on("click", function() {
+    $("h1").fadeOut();
+    });
+//fades out
+
+
+$("button").on("click", function() {
+    $("h1").fadeIn();
+    });
+
+//fades in
+
+
+$("button").on("click", function() {
+    $("h1").fadeToggle();
+    });
+
+
+// fades but toggles in/out
+
+
+
+$("button").on("click", function() {
+    $("h1").slideUp();
+    });
+
+// slides up/collapses/hides element 
+
+
+
+$("button").on("click", function() {
+    $("h1").slideDown();
+    });
+
+// slides/uncollapses/shows element 
+
+
+$("button").on("click", function() {
+    $("h1").slideToggle();
+    });
+
+// slides toggle - good for dropdown menu's
+
+$("button").on("click", function() {
+    $("h1").animate({opacity: 0.5});
+    });
+
+// custom css using animate method. Only numeric values work for the animate method
+
+$("button").on("click", function() {
+    $("h1").slideUp().slideDown().animate({margin: "20%"});
+    });
+    
+    
+//chaining methods
